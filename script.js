@@ -37,7 +37,7 @@ function basketFullPrice() {
 
     let total = basket.reduce((sum, item) => sum + item.price * item.count, 0);
 
-    basketFullPriceContentRef.innerHTML += 'Gesamt:' + ' ' + total.toLocaleString('de-DE', { style: 'currency', currency: 'EUR' });
+    basketFullPriceContentRef.innerHTML += total.toLocaleString('de-DE', { style: 'currency', currency: 'EUR' });
 }
 
 function moveDish(i) {
