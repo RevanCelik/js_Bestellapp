@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Die Bude ums Eck</title>
+
+    <link rel="icon" type="image/x-icon" href="./assets/favicon/favicon-32x32.png">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=PT+Sans&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <script src="./script/db.js"></script>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./styles/assets.css">
+    <link rel="stylesheet" href="./styles/fonts.css">
+    <link rel="stylesheet" href="./styles/standard.css">
+    <link rel="stylesheet" href="./styles/basket.css">
+</head>
+
+<body onload="init()">
+
+    <header>
+        <img class="bestell_logo" src="./assets/img/Logo.png" alt="" srcset="">
+    </header>
+
+    <main class="content">
+        <section class="full_content_left">
+            <div>
+                <img class="food_image" src="./assets/img/schnitzel.jpg" alt="Schnitzel mit Pommes" srcset="">
+            </div>
+
+            <div class="restaurant_logo">
+                <img class="restaurant_img" src="./assets/img/food_12360424.png" alt="Restaurant Logo" srcset="">
+            </div>
+
+            <div>
+                <h1>Der Alleskönner</h1>
+                <p>Bewertung (4,3 von 5 Sternen)</p>
+            </div>
+
+            <div>
+                <img class="food_image_small" src="./assets/img/haenchencurry.jpg" alt="Schnitzel mit Pommes" srcset="">
+            </div>
+
+            <div>
+                <h2>Hauptgerichte</h2>
+            </div>
+
+            <div id="content"></div>
+
+            <div>
+                <img class="food_image_small" src="./assets/img/tomatensuppe.jpg" alt="Schnitzel mit Pommes" srcset="">
+            </div>
+        </section>
+
+        <section class="basket_content_right">
+
+            <div class="basket">
+                <div class="basket_dialog">
+                    <button class="basket_dialog_style">
+                        <h1>Warenkorb</h1>
+                    </button>
+                </div>
+                <div class="line"></div><br>
+                <div id="basket_dish"></div>
+                <div class="line"></div><br>
+                <div id="basket_total_price"></div>
+
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <img class="bestell_logo" src="./assets/favicon/android-chrome-192x192.png" alt="" srcset="">
+    </footer>
+
+</body>
+
+<script src="./script.js"></script>
+
+</html>

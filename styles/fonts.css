@@ -1,0 +1,45 @@
+.pt-sans-regular {
+    font-family: "PT Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1 {
+    padding: 8px;
+    font-family: "Raleway", sans-serif;
+}
+
+h2 {
+    padding: 16px;
+    font-family: "Raleway", sans-serif;
+}
+
+p {
+    padding: 8px;
+    color: #fb8200;
+    font-family: "Raleway", sans-serif;
+}
+
+.content_menu {
+    padding: 8px;
+    display: flex;
+    justify-content: space-between;
+    font-family: "Raleway", sans-serif;
+}
+
+.dialog_menu {
+    border-style: solid;
+    margin: 8px;
+    border-width: 1px;
+    font-family: "Raleway", sans-serif;
+}
+
+.dialog_menu:hover {
+    background-color: rgb(109, 161, 206);
+}
+
+.name_button {
+    display: flex;
+    justify-content: space-between;
+    font-family: "Raleway", sans-serif;
+}

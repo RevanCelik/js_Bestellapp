@@ -1,0 +1,58 @@
+.basket_content_right {
+    width: 300px;
+    flex-grow: 1;
+    padding: 16px;
+    border-style: solid;
+    border-width: 2px;
+}
+
+.basket {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    font-family: "Raleway", sans-serif;
+}
+
+.basket_style {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.basket_center {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 16px;
+}
+
+.basket_button_style {
+    height: 30px;
+    width: 30px;
+    color: #fb8200;
+    background-color: transparent;
+    border-style: outset;
+    border-width: 1px;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.basket_dialog {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.basket_dialog_style {
+    width: 100%;
+    margin-bottom: 16px;
+    background-color: rgb(109, 161, 206);
+    border-style: hidden;
+}
+
+.basket_dialog_style:hover {
+    background-color: rgb(89, 143, 190);
+}
