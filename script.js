@@ -17,10 +17,6 @@ function renderDishes() {
             <div class="content_menu">${myDish.description}</div>
             <div class="content_menu">${myDish.price.toLocaleString('de-DE', { style: 'currency', currency: 'EUR' })}</div>
         </div>
-        
-
-        
-
         `;
     }
 }
@@ -32,7 +28,6 @@ function basketDishes() {
     for (let i = 0; i < basket.length; i++) {
         basketContentRef.innerHTML += getBasketTemplate(i);
     }
-
     basketFullPrice();
 }
 
@@ -53,7 +48,6 @@ function getBasketTemplate(i) {
         </div>
     
     </div>
-
     `;
 }
 
@@ -79,7 +73,6 @@ function moveDish(i) {
         }
         basket.push(newDish);
     }
-
     renderDishes();
     basketDishes();
 }
@@ -92,7 +85,6 @@ function decreaseDish(i) {
     } else {
         basket.splice(i, 1);
     }
-
     renderDishes();
     basketDishes();
 }
