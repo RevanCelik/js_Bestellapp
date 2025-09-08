@@ -25,8 +25,13 @@ function basketDishes() {
     let basketContentRef = document.getElementById('basket_dish');
     basketContentRef.innerHTML = "";
 
-    for (let i = 0; i < basket.length; i++) {
+    if (basket.length == 0) {
+        basketContentRef.innerHTML = "<div><strong>Es ist noch nichts im Warenkorb</strong></div><br>";
+    
+    } else {
+        for (let i = 0; i < basket.length; i++) {
         basketContentRef.innerHTML += getBasketTemplate(i);
+    }
     }
     basketFullPrice();
 }
@@ -81,6 +86,18 @@ function increaseDish(i) {
 function deleteDish(i) {
     basket.splice(i, 1);
     totalDishPrice.splice(i, 1);
+
+    renderDishes();
+    basketDishes();
+}
+
+function deliveryFee() {
+
+    if (basket == count > 0) {
+        console.log("Lieferkosten");
+    } else {
+        console.log("No Fee");
+    }
 
     renderDishes();
     basketDishes();
