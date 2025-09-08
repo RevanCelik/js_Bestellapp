@@ -34,6 +34,7 @@ function basketDishes() {
     }
     }
     basketFullPrice();
+    deliveryFee();
 }
 
 function basketFullPrice() {
@@ -92,13 +93,12 @@ function deleteDish(i) {
 }
 
 function deliveryFee() {
+    let deliveryContentRef = document.getElementById('basket_delivery_fee');
+    deliveryContentRef.innerHTML = "";
 
-    if (basket == count > 0) {
-        console.log("Lieferkosten");
+    if (basket.length > 0) {
+        deliveryContentRef.innerHTML = "5,00 €";
     } else {
-        console.log("No Fee");
+        deliveryContentRef.innerHTML = "0,00 €";
     }
-
-    renderDishes();
-    basketDishes();
 }
