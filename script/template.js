@@ -17,3 +17,17 @@ function getBasketTemplate(i) {
     </div>
     `;
 }
+
+function getOrderBasketTemplate() {
+    return `
+    <div>
+        <div>
+            <strong>Vielen Dank! Die Bestellung wurde erfolgreich aufgegeben.</strong>
+        </div><br>
+
+        <div>
+            Die geschätze Lieferungszeit beträgt 25 - 45 Minuten.
+        </div>
+    </div>
+    `;
+}

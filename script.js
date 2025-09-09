@@ -102,3 +102,13 @@ function deliveryFee() {
         deliveryContentRef.innerHTML = "0,00 €";
     }
 }
+
+function order() {
+    let orderBasketContentRef = document.getElementById('order_message');
+    orderBasketContentRef.innerHTML ="";
+
+    basket = [];
+
+    basketDishes();
+    orderBasketContentRef.innerHTML = getOrderBasketTemplate();
+}
