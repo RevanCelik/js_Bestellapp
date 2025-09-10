@@ -19,8 +19,6 @@
 .restaurant_img {
     position: absolute;
     bottom: 590px;
-    /* left: 39%;
-    transform: translateX(-50%); */
     width: 80px;
     background-color: white;
     border-radius: 40px;

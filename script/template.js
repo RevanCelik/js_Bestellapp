@@ -22,7 +22,7 @@ function getOrderBasketTemplate() {
     return `
     <div>
         <div>
-            <strong>Vielen Dank! Die Bestellung wurde erfolgreich aufgegeben.</strong>
+            <strong>Vielen Dank! Die Testbestellung wurde erfolgreich aufgegeben.</strong>
         </div><br>
 
         <div>
