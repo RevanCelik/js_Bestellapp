@@ -43,3 +43,9 @@ p {
     justify-content: space-between;
     font-family: "Raleway", sans-serif;
 }
+
+@media (max-width: 783px) {
+    .restaurant_name_responsive {
+        width: 150px;
+    }
+}
