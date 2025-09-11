@@ -71,6 +71,21 @@ main {
 }
 
 .line {
-  height: 2px;
-  background-color: rgba(88, 82, 82, 0.582);
+    height: 2px;
+    background-color: rgba(88, 82, 82, 0.582);
+}
+
+@media (max-width: 670px) {
+    .content {
+        flex-grow: 1;
+        flex-direction: column;
+    }
+
+    .full_content_left {
+        width: 100%;
+    }
+
+    .add_button {
+        right: 8px;
+    }
 }

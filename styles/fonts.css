@@ -49,3 +49,15 @@ p {
         width: 150px;
     }
 }
+
+@media (max-width: 670px) {
+    .restaurant_name_responsive {
+        width: 400px;
+    }
+}
+
+@media (max-width: 470px) {
+    .restaurant_name_responsive {
+        width: 150px;
+    }
+}

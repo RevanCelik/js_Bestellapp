@@ -61,3 +61,10 @@
     display: flex;
     justify-content: space-between;
 }
+
+@media (max-width: 670px) {
+    .basket_content_right {
+        width: 97%;
+        margin: 8px;
+    }
+}
