@@ -53,6 +53,13 @@
     border-style: hidden;
 }
 
+.basket_responsive_button {
+    height: 40px;
+    margin: 8px;
+    background-color: rgb(109, 161, 206);
+    border-style: hidden;
+}
+
 .basket_dialog_style:hover {
     background-color: rgb(89, 143, 190);
 }
@@ -66,5 +73,9 @@
     .basket_content_right {
         width: 97%;
         margin: 8px;
+    }
+
+    .hidden {
+        display: none;
     }
 }
