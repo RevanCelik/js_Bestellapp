@@ -112,3 +112,15 @@ function order() {
     basketDishes();
     orderBasketContentRef.innerHTML = getOrderBasketTemplate();
 }
+
+function toggleOverlaySection() {
+    let overlayRefSection = document.getElementById('basket_overlay');
+
+    overlayRefSection.classList.toggle('hidden');
+}
+
+function toggleOverlayDiv() {
+    let overlayRefDiv = document.getElementById('basket_overlay_div');
+
+    overlayRefDiv.classList.toggle('hidden');
+}

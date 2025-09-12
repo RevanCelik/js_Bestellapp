@@ -59,14 +59,16 @@
             </div>
         </section>
 
-        <button class="basket_responsive_button">Warenkorb</button>
+        <div class="hidden_button">
+            <button onclick="toggleOverlaySection(); toggleOverlayDiv()" class="basket_responsive_button">Warenkorb</button>
+        </div>
 
-        <section class="basket_content_right hidden">
+        <section id="basket_overlay" class="basket_content_right open hidden">
 
-            <div class="basket hidden">
+            <div id="basket_overlay_div" class="basket open hidden">
 
                 <div class="basket_dialog">
-                    <button class="basket_dialog_style">
+                    <button onclick="toggleOverlaySection(); toggleOverlayDiv()" class="basket_dialog_style">
                         <h1>Warenkorb</h1>
                     </button>
                 </div>
