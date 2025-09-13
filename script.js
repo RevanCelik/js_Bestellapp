@@ -35,6 +35,7 @@ function basketDishes() {
     }
     basketFullPrice();
     deliveryFee();
+    updateTotal();
 }
 
 function basketFullPrice() {
@@ -123,4 +124,22 @@ function toggleOverlayDiv() {
     let overlayRefDiv = document.getElementById('basket_overlay_div');
 
     overlayRefDiv.classList.toggle('hidden');
+}
+
+function getDeliveryFeeNumber() {
+    let text = document.getElementById("basket_delivery_fee").innerText;
+    let number = parseFloat(text.replace("€", "").replace(" ", "").replace(",", "."));
+    return number;
+}
+
+function updateTotal() {
+
+let subtotalText = document.getElementById("basket_total_price").innerText;
+let subtotal = parseFloat(subtotalText.replace("€", "").replace(" ", "").replace(",", ".")) || 0;
+
+let delivery = getDeliveryFeeNumber();
+
+let total = subtotal + delivery;
+
+document.getElementById("basket_grand_total").innerText = total.toFixed(2).replace(".", ",") + " €";
 }

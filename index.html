@@ -34,7 +34,7 @@
             <div>
                 <img class="food_image" src="./assets/img/schnitzel.jpg" alt="Schnitzel mit Pommes" srcset="">
             </div>
-            
+
             <div class="restaurant_logo">
                 <img class="restaurant_img" src="./assets/img/food_12360424.png" alt="Restaurant Logo" srcset="">
             </div>
@@ -60,7 +60,9 @@
         </section>
 
         <div class="hidden_button">
-            <button onclick="toggleOverlaySection(); toggleOverlayDiv()" class="basket_responsive_button"><h1>Warenkorb</h1></button>
+            <button onclick="toggleOverlaySection(); toggleOverlayDiv()" class="basket_responsive_button">
+                <h1>Warenkorb</h1>
+            </button>
         </div>
 
         <section id="basket_overlay" class="basket_content_right open hidden">
@@ -80,13 +82,18 @@
                 <div class="line"></div><br>
 
                 <div class="basket_total_price_style">
-                    <div>Gesamt</div>
+                    <div>Zwischensumme</div>
                     <div id="basket_total_price"></div>
                 </div><br>
 
                 <div class="basket_total_price_style">
                     <div>Lieferkosten</div>
                     <div id="basket_delivery_fee"></div>
+                </div><br>
+
+                <div class="basket_total_price_style">
+                    <div>Gesamtsumme</div>
+                    <div id="basket_grand_total"></div>
                 </div><br>
 
 
